@@ -1,9 +1,9 @@
-import Main_Container from '../main_container/Main_container';
+import MainContainer from '../main_container/Main_container';
 
 function App() {
   return (
     <>
-      <Main_Container />
+      <MainContainer />
     </>
   );
 }

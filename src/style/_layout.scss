@@ -1,1 +1,28 @@
 @import '_base.scss';
+
+.container {
+  max-width: 100rem;
+  min-height: 50rem;
+  margin: 10rem auto;
+  background-color: var(--col-cornsilk);
+  // @include box-shadow;
+  box-shadow: var(--box-shadow-mid);
+}
+.header {
+  height: 7rem;
+  background-color: var(--col-white);
+  border-bottom: 0.1rem solid var(--col-independence);
+}
+.content {
+  display: flex;
+}
+.sidebar {
+  background-color: var(--col-independence-darker);
+  color: var(--col-white);
+  flex: 0 0 18%;
+}
+.hotel-view {
+  background-color: var(--col-cornsilk);
+  background-color: red;
+  flex: 1;
+}
