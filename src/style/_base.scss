@@ -1,0 +1,55 @@
+// ------------------------------ SITE COLOR PALLETE (USING CSS VARIABLES INSTEAD OF SASS VARIABLES)
+:root {
+  --col-white: #fcfcfc;
+  --col-brink-pink: #f7567c;
+  --col-cornsilk: #fffae3;
+  --col-mid-blue-green: #99e1d9;
+  --col-independence: #5d576b;
+}
+// ------------------------------ FONTS
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+$open-sans: 'Open Sans';
+// ------------------------------ GLOBAL RESETS
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+}
+body {
+  font-family: $open-sans, sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(37.95, 100%, 77.06%) 0%,
+    hsl(34.86, 100%, 76.97%) 9.4%,
+    hsl(32.1, 100%, 76.89%) 17.6%,
+    hsl(29.63, 100%, 76.82%) 24.8%,
+    hsl(27.39, 100%, 76.75%) 31.2%,
+    hsl(25.35, 100%, 76.7%) 37%,
+    hsl(23.43, 100%, 76.64%) 42.4%,
+    hsl(21.59, 100%, 76.59%) 47.5%,
+    hsl(19.75, 100%, 76.55%) 52.5%,
+    hsl(17.85, 100%, 76.5%) 57.6%,
+    hsl(15.8, 100%, 76.44%) 63%,
+    hsl(13.53, 100%, 76.39%) 68.8%,
+    hsl(10.94, 100%, 76.32%) 75.2%,
+    hsl(7.92, 100%, 76.25%) 82.4%,
+    hsl(4.34, 100%, 76.17%) 90.6%,
+    hsl(0, 100%, 76.08%) 100%
+  );
+  color: var(--col-independence);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+// ------------------------------ X
