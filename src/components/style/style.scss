@@ -19,8 +19,21 @@ body {
     margin: 30px;
     font-size: 40px;
     color: lightseagreen;
+
+    // flex-grow: 1;
+    // flex: 1; // shorthand of flex-grow
   }
   .long {
     padding: 55px;
+    order: -2;
+    // flex-basis: 400px;
+    // flex-shrink: 0;
+    flex: 0 0 400px;
+  }
+  .short {
+    padding: 20px;
+    align-self: flex-end;
+    order: -1;
+    flex-grow: 1;
   }
 }
