@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: lightblue;
+}
+.container {
+  background-color: salmon;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  .item {
+    background-color: gold;
+    padding: 40px;
+    margin: 30px;
+    font-size: 40px;
+    color: lightseagreen;
+  }
+  .long {
+    padding: 55px;
+  }
 }
