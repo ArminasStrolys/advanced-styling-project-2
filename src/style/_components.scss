@@ -1,17 +1,25 @@
 @import '_base.scss';
-
-.search {
-  &__button {
-    width: 20rem;
-  }
-  &__icon {
-    width: 2rem;
-  }
+//------------------------------------ LOGO SVG
+.logo {
+  height: 5rem;
 }
-
-.user-nav {
-  &__icon {
-    height: 10rem;
-    background-color: salmon;
-  }
+//------------------------------------ SEARCH SVG
+.search__button {
+  width: 5rem;
+}
+//------------------------------------ BANNER AND MESSAGE SVG
+.user-nav__icon {
+  height: 5rem;
+}
+//------------------------------------ BANNER SVG
+.user-nav__icon--banner {
+  background-color: salmon;
+}
+//------------------------------------ MESSAGE SVG
+.user-nav__icon--message {
+  background-color: red;
+}
+//------------------------------------ USER PHOTO
+.user-nav__user-photo {
+  width: 5rem;
 }
