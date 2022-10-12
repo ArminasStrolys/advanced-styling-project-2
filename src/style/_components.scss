@@ -1,15 +1,21 @@
 @import '_base.scss';
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++ ICONS
 //------------------------------------ LOGO SVG
 .logo {
   height: 5rem;
+  width: 5rem;
+  margin-left: 3rem;
+  background-color: yellowgreen;
 }
 //------------------------------------ SEARCH SVG
-.search__button {
-  width: 5rem;
+.search__icon {
+  width: 2.25rem;
+  height: 2.25rem;
 }
 //------------------------------------ BANNER AND MESSAGE SVG
 .user-nav__icon {
-  height: 5rem;
+  height: 2rem;
+  width: 2rem;
 }
 //------------------------------------ BANNER SVG
 .user-nav__icon--banner {
@@ -21,5 +27,51 @@
 }
 //------------------------------------ USER PHOTO
 .user-nav__user-photo {
-  width: 5rem;
+  width: 3.75rem;
+  border-radius: 50%;
+}
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++ SEARCH SECTION
+.search {
+  background-color: pink;
+  flex: 0 0 40%;
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--col-independence-lighter);
+    border: none;
+    color: inherit;
+    padding: 0.7rem 2rem;
+    border-radius: 10rem;
+    width: 10%;
+    transition: all 0.3s;
+    &:focus {
+      width: 90%;
+      outline: none;
+      background-color: var(--col-independence-darker);
+      color: var(--col-white);
+    }
+  }
+  &__button {
+  }
+  &__icon {
+  }
+}
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++ USER NAVIGATION
+.user-nav {
+  display: flex;
+  // justify-content: center;
+  background-color: blue;
+  margin-right: 3rem;
+  &__icon-box {
+  }
+  &__icon {
+  }
+  &__notification {
+  }
+  &__user {
+  }
+  &__user-photo {
+  }
+  &__user-name {
+  }
 }

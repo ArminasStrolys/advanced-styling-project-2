@@ -12,6 +12,9 @@
   height: 7rem;
   background-color: var(--col-white);
   border-bottom: 0.1rem solid var(--col-independence);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .content {
   display: flex;

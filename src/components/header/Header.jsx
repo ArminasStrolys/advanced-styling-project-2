@@ -27,8 +27,8 @@ const Header = () => {
               alt=""
               className="user-nav__icon user-nav__icon--banner"
             />
+            <span className="user-nav__notification">5</span>
           </div>
-          <span className="user-nav__notification">5</span>
           <div className="user-nav__icon-box">
             <img
               src={message}
