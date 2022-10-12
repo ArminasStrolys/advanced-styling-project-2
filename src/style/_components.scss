@@ -5,7 +5,6 @@
   height: 5rem;
   width: 5rem;
   margin-left: 3rem;
-  background-color: yellowgreen;
 }
 //------------------------------------ SEARCH SVG
 .search__icon {
@@ -14,16 +13,16 @@
 }
 //------------------------------------ BANNER AND MESSAGE SVG
 .user-nav__icon {
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  filter: invert(39%) sepia(0%) saturate(3%) hue-rotate(187deg) brightness(98%)
+    contrast(92%);
 }
 //------------------------------------ BANNER SVG
 .user-nav__icon--banner {
-  background-color: salmon;
 }
 //------------------------------------ MESSAGE SVG
 .user-nav__icon--message {
-  background-color: red;
 }
 //------------------------------------ USER PHOTO
 .user-nav__user-photo {
@@ -32,26 +31,36 @@
 }
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++ SEARCH SECTION
 .search {
-  background-color: pink;
   flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &__input {
     font-family: inherit;
     font-size: inherit;
-    background-color: var(--col-independence-lighter);
+    font-weight: 800;
+    background-color: var(--col-gray-1);
     border: none;
-    color: inherit;
+    color: var(--col-black);
     padding: 0.7rem 2rem;
     border-radius: 10rem;
-    width: 10%;
+    width: 30%;
     transition: all 0.3s;
+    margin-left: 1rem;
     &:focus {
-      width: 90%;
+      width: 100%;
       outline: none;
-      background-color: var(--col-independence-darker);
+      background-color: var(--col-gray-4);
       color: var(--col-white);
     }
   }
   &__button {
+    border: none;
+    background-color: transparent;
+    order: -1;
+    &:focus {
+      outline: none;
+    }
   }
   &__icon {
   }
@@ -59,19 +68,35 @@
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++ USER NAVIGATION
 .user-nav {
   display: flex;
+  align-items: center;
   // justify-content: center;
-  background-color: blue;
+  // background-color: rgb(128, 128, 255);
   margin-right: 3rem;
   &__icon-box {
+    margin-right: 3rem;
+    position: relative;
   }
   &__icon {
   }
   &__notification {
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    position: absolute;
+    background-color: var(--col-brink-pink);
+    text-align: center;
+    left: 1.4rem;
+    top: -0.5rem;
+    color: var(--col-white);
   }
   &__user {
+    display: flex;
   }
   &__user-photo {
   }
   &__user-name {
+    align-self: center;
+    margin-left: 1rem;
+    font-size: 1.6rem;
   }
 }
