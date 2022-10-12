@@ -53,6 +53,10 @@
       background-color: var(--col-gray-4);
       color: var(--col-white);
     }
+    &::placeholder {
+      font-weight: 100;
+      color: var(--col-gray-4);
+    }
   }
   &__button {
     border: none;
@@ -79,6 +83,7 @@
   &__icon {
   }
   &__notification {
+    font-size: 1rem;
     width: 1.7rem;
     height: 1.7rem;
     border-radius: 50%;
@@ -97,6 +102,5 @@
   &__user-name {
     align-self: center;
     margin-left: 1rem;
-    font-size: 1.6rem;
   }
 }
