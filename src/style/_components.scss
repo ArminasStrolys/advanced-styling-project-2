@@ -1,1 +1,17 @@
 @import '_base.scss';
+
+.search {
+  &__button {
+    width: 20rem;
+  }
+  &__icon {
+    width: 2rem;
+  }
+}
+
+.user-nav {
+  &__icon {
+    height: 10rem;
+    background-color: salmon;
+  }
+}
