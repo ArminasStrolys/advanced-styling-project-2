@@ -114,5 +114,19 @@
   }
 }
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++ SIDEBAR / NAVIGATION
-.sidebar {
+.side-nav {
+  &__item {
+  }
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  &__link {
+  }
+}
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem;
+  color: var(--col-gray-1);
 }

@@ -14,6 +14,7 @@
   --col-black: rgb(0, 0, 0);
   --box-shadow-mid: 0 0 3rem rgba(0, 0, 0, 0.5); // not a color
 }
+$col-black: black;
 // ------------------------------ FONTS
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 $open-sans: 'Open Sans';
@@ -62,5 +63,6 @@ body {
 }
 // ------------------------------ MIXINS
 @mixin box-shadow($x: 0, $y: 0, $spread: 2rem, $a: 0.5) {
-  box-shadow: $x $y $spread rgba(var(--col-black), $a);
+  // box-shadow: $x $y $spread rgba(var(--col-black), $a);
+  box-shadow: $x $y $spread rgba($col-black, $a);
 }
