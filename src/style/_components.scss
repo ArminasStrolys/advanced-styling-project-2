@@ -125,6 +125,12 @@
       margin-bottom: 0.5rem;
     }
   }
+  &__item--active {
+    background-color: var(--col-independence);
+    span {
+      color: var(--col-brink-pink);
+    }
+  }
   &__item::before {
     content: '';
     position: absolute;
@@ -135,11 +141,14 @@
     background-color: var(--col-independence);
     z-index: -1;
     transform: scaleY(0);
-    transition: transform 0.2s, width 0.4s 0.2s;
+    transition: transform 0.2s, width 0.3s 0.2s, background-color 0.1s;
   }
   &__item:hover::before {
     transform: scaleY(1);
     width: 100%;
+  }
+  &__item:active::before {
+    background-color: var(--col-independence-lighter);
   }
 
   &__icon {
@@ -168,4 +177,28 @@
   text-align: center;
   padding: 2.5rem;
   color: var(--col-gray-1);
+}
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++ HOTEL-VIEW / CONTENT
+.gallery {
+  display: flex;
+  &__photo {
+    width: 100%;
+    display: block;
+    height: 100%;
+  }
+}
+.overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__heading {
+  }
+  &__star-rating {
+    &-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  &__location {
+  }
 }
