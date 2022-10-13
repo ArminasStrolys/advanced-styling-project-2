@@ -64,14 +64,14 @@ const Content = () => {
           </div>
           <div className="overview__location">
             <img
-              className="overview__star-rating-icon"
+              className="overview__location-icon"
               src={location}
               alt="location pin icon"
             />
             <button className="btn-inline">Somewhereville, Pacific</button>
           </div>
           <div className="overview__rating">
-            <div className="overview__rating-avg">9.1</div>
+            <div className="overview__rating-avg">8.9</div>
             <div className="overview__rating-votes">2652 votes</div>
           </div>
         </div>
