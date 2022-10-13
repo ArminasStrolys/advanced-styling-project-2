@@ -27,6 +27,7 @@
 //------------------------------------ USER PHOTO
 .user-nav__user-photo {
   width: 3.75rem;
+  height: 3.75rem;
   border-radius: 50%;
 }
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++ SEARCH SECTION
@@ -73,12 +74,18 @@
 .user-nav {
   display: flex;
   align-items: center;
-  // justify-content: center;
-  // background-color: rgb(128, 128, 255);
   margin-right: 3rem;
+  align-self: stretch;
   &__icon-box {
-    margin-right: 3rem;
+    margin-right: 1rem;
     position: relative;
+    height: 100%;
+    transition: all 0.3s;
+    cursor: pointer;
+    padding: 2rem;
+    &:hover {
+      background-color: var(--col-gray-1);
+    }
   }
   &__icon {
   }
@@ -90,12 +97,18 @@
     position: absolute;
     background-color: var(--col-brink-pink);
     text-align: center;
-    left: 1.4rem;
-    top: -0.5rem;
+    left: 3.4rem;
+    top: 1.5rem;
     color: var(--col-white);
   }
   &__user {
     display: flex;
+    align-self: stretch;
+    align-items: center;
+    cursor: pointer;
+    &:hover > .user-nav__user-name {
+      text-decoration: underline;
+    }
   }
   &__user-photo {
   }
