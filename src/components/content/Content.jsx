@@ -75,6 +75,45 @@ const Content = () => {
             <div className="overview__rating-votes">2652 votes</div>
           </div>
         </div>
+        <div className="detail">
+          <div className="description">
+            <p className="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+              neque eos quod ad assumenda. Consectetur odit illum recusandae
+              officia excepturi voluptatum, inventore debitis enim ullam, itaque
+              aperiam mollitia, laudantium adipisci quo laborum esse ab expedita
+              qui error assumenda facere nostrum.
+            </p>
+            <p className="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+              aliquam officiis voluptate provident minus ipsa harum blanditiis
+              expedita recusandae assumenda sapiente nobis, magnam repellendus
+              autem!
+            </p>
+            <ul className="list">
+              <li className="list__item">Lorem ipsum dolor sit amet.</li>
+              <li className="list__item">Lorem ipsum dolor amet.</li>
+              <li className="list__item">Lorem ipsum dolor sit amet.</li>
+              <li className="list__item">Lorem ipsum sit amet.</li>
+              <li className="list__item">Lorem dolor amet.</li>
+              <li className="list__item">Lorem amet.</li>
+              <li className="list__item">Lorem ipsum dolor.</li>
+              <li className="list__item">Lorem dolor sit amet.</li>
+            </ul>
+            <div className="recommend">
+              <p className="recommend__count">
+                Richard and 42 other recommend this hotel.
+              </p>
+              <div className="recommend__friends">
+                <img src="" alt="" className="recommend__photo" />
+                <img src="" alt="" className="recommend__photo" />
+                <img src="" alt="" className="recommend__photo" />
+                <img src="" alt="" className="recommend__photo" />
+              </div>
+            </div>
+          </div>
+          <div className="user-reviews">USER REVIEWS</div>
+        </div>
       </main>
     </>
   );
