@@ -1,9 +1,9 @@
 @import '_base.scss';
 
 .container {
-  max-width: 100rem;
+  max-width: 120rem;
   min-height: 50rem;
-  margin: 10rem auto;
+  margin: 5rem auto;
   background-color: var(--col-cornsilk);
   // @include box-shadow;
   box-shadow: var(--box-shadow-mid);
