@@ -118,9 +118,6 @@
   list-style-type: none;
   font-size: 1.4rem;
   margin-top: 4rem;
-  * > span {
-    align-self: center;
-  }
   &__item {
   }
   &__icon {
@@ -129,15 +126,15 @@
     margin-right: 2rem;
   }
   &__link {
+    display: flex;
+    align-items: center;
     transition: all 0.2s;
     &:visited,
     & {
       text-decoration: none;
       color: var(--col-gray-1);
       text-transform: uppercase;
-      display: block;
       padding: 1.5rem 2rem;
-      display: flex;
     }
     &:hover {
       color: var(--col-brink-pink);
