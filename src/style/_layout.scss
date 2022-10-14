@@ -53,6 +53,12 @@
   margin-right: 5rem;
   font-size: 1.4rem;
 }
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ PARAGRAPH
+.paragraph {
+  // margin-bottom: 3rem;
+  text-indent: 1rem;
+}
+
 .user-reviews {
   background-color: aquamarine;
   @include box-shadow;

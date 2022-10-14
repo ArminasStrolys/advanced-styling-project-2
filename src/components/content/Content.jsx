@@ -81,20 +81,20 @@ const Content = () => {
         </div>
         <div className="detail">
           <div className="description">
-            <p className="paragraph">
+            <p className="paragraph margin-bottom">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
               neque eos quod ad assumenda. Consectetur odit illum recusandae
               officia excepturi voluptatum, inventore debitis enim ullam, itaque
               aperiam mollitia, laudantium adipisci quo laborum esse ab expedita
               qui error assumenda facere nostrum.
             </p>
-            <p className="paragraph">
+            <p className="paragraph margin-bottom">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
               aliquam officiis voluptate provident minus ipsa harum blanditiis
               expedita recusandae assumenda sapiente nobis, magnam repellendus
               autem!
             </p>
-            <ul className="list">
+            <ul className="list margin-bottom">
               <li className="list__item">Lorem ipsum dolor sit amet.</li>
               <li className="list__item">Lorem ipsum dolor amet.</li>
               <li className="list__item">Lorem ipsum dolor sit amet.</li>
@@ -109,10 +109,31 @@ const Content = () => {
                 Richard and 42 other recommend this hotel.
               </p>
               <div className="recommend__friends">
-                <img src={friend2} alt="" className="recommend__photo" />
-                <img src={friend1} alt="" className="recommend__photo" />
-                <img src={friend3} alt="" className="recommend__photo" />
-                <img src={friend4} alt="" className="recommend__photo" />
+                <img
+                  src={friend2}
+                  alt="Friend who recommends this hotel icon 2"
+                  className="recommend__photo"
+                />
+                <img
+                  src={friend1}
+                  alt="Friend who recommends this hotel icon 1"
+                  className="recommend__photo"
+                />
+                <img
+                  src={friend3}
+                  alt="Friend who recommends this hotel icon 3"
+                  className="recommend__photo"
+                />
+                <img
+                  src={friend4}
+                  alt="Friend who recommends this hotel icon 4"
+                  className="recommend__photo"
+                />
+                <img
+                  src={friend4}
+                  alt="Number of other recommends"
+                  className="recommend__photo "
+                />
               </div>
             </div>
           </div>
