@@ -5,6 +5,10 @@ import hotel3 from '../../images/hotel3.jpg';
 import starFilled from '../../images/svg/star2.svg';
 import starEmpty from '../../images/svg/star1.svg';
 import location from '../../images/svg/location.svg';
+import friend1 from '../../images/friend1.jpg';
+import friend2 from '../../images/friend2.jpg';
+import friend3 from '../../images/friend3.jpg';
+import friend4 from '../../images/friend4.jpg';
 
 const Content = () => {
   return (
@@ -105,10 +109,10 @@ const Content = () => {
                 Richard and 42 other recommend this hotel.
               </p>
               <div className="recommend__friends">
-                <img src="" alt="" className="recommend__photo" />
-                <img src="" alt="" className="recommend__photo" />
-                <img src="" alt="" className="recommend__photo" />
-                <img src="" alt="" className="recommend__photo" />
+                <img src={friend2} alt="" className="recommend__photo" />
+                <img src={friend1} alt="" className="recommend__photo" />
+                <img src={friend3} alt="" className="recommend__photo" />
+                <img src={friend4} alt="" className="recommend__photo" />
               </div>
             </div>
           </div>
