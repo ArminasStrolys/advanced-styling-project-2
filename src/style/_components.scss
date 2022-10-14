@@ -239,8 +239,8 @@
 .list {
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 0.1rem solid var(--col-independence);
-  border-top: 0.1rem solid var(--col-independence);
+  border-bottom: 0.1rem solid var(--col-independence-lighter);
+  border-top: 0.1rem solid var(--col-independence-lighter);
   margin: 2rem 0;
   padding: 2rem 0;
   &__item {
@@ -267,6 +267,7 @@
   justify-content: space-between;
   align-items: center;
   &__count {
+    // margin-right: auto; // alternative to justify-content
   }
   &__friends {
   }
@@ -290,7 +291,7 @@
     }
   }
   &__photo:not(:last-child) {
-    margin-right: -1.5rem;
+    margin-right: -1.2rem;
   }
 }
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++ REUSABLE COMPONENT / BUTTON
