@@ -129,11 +129,10 @@ const Content = () => {
                   alt="Friend who recommends this hotel icon 4"
                   className="recommend__photo"
                 />
-                <img
-                  src={friend4}
-                  alt="Number of other recommends"
-                  className="recommend__photo "
-                />
+
+                <div className="recommend__photo recommend__photo--empty">
+                  <span className="recommend__photo-others">+38</span>
+                </div>
               </div>
             </div>
           </div>
