@@ -136,7 +136,42 @@ const Content = () => {
               </div>
             </div>
           </div>
-          <div className="user-reviews">USER REVIEWS</div>
+          <div className="user-reviews">
+            <figure className="review">
+              <blockquote className="review__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Asperiores, illum sit ullam debitis, natus cupiditate fuga
+                commodi, inventore explicabo dicta esse nesciunt minus quia
+                molestiae labore laboriosam aliquid eius reiciendis.
+              </blockquote>
+              <figcaption className="review__user">
+                <img src="" alt="User 1" className="review__photo" />
+                <div className="review__user-box">
+                  <p className="review__user-name">Matt Harrison</p>
+                  <p className="review__user-date">Sep 2nd, 2035</p>
+                </div>
+                <div className="review__rating">8.7</div>
+              </figcaption>
+            </figure>
+            <figure className="review">
+              <blockquote className="review__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                nostrum asperiores libero. Culpa sint quia porro dolor est
+                voluptatem nemo, nobis repellendus fuga error dolore enim optio
+                commodi, quidem dolores officia atque! Temporibus doloremque
+                maxime iusto alias blanditiis commodi neque minima officiis
+                consequuntur?
+              </blockquote>
+              <figcaption className="review__user">
+                <img src="" alt="User 1" className="review__photo" />
+                <div className="review__user-box">
+                  <p className="review__user-name">Jake Freshfield</p>
+                  <p className="review__user-date">Dec 24th, 2027</p>
+                </div>
+                <div className="review__rating">9.3</div>
+              </figcaption>
+            </figure>
+          </div>
         </div>
       </main>
     </>
