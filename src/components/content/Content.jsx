@@ -9,6 +9,8 @@ import friend1 from '../../images/friend1.jpg';
 import friend2 from '../../images/friend2.jpg';
 import friend3 from '../../images/friend3.jpg';
 import friend4 from '../../images/friend4.jpg';
+import reviewer1 from '../../images/reviewer1.jpg';
+import reviewer2 from '../../images/reviewer2.jpg';
 
 const Content = () => {
   return (
@@ -145,10 +147,10 @@ const Content = () => {
                 molestiae labore laboriosam aliquid eius reiciendis.
               </blockquote>
               <figcaption className="review__user">
-                <img src="" alt="User 1" className="review__photo" />
+                <img src={reviewer1} alt="User 1" className="review__photo" />
                 <div className="review__user-box">
                   <p className="review__user-name">Matt Harrison</p>
-                  <p className="review__user-date">Sep 2nd, 2035</p>
+                  <p className="review__user-date">Sept 2nd, 2035</p>
                 </div>
                 <div className="review__rating">8.7</div>
               </figcaption>
@@ -163,7 +165,7 @@ const Content = () => {
                 consequuntur?
               </blockquote>
               <figcaption className="review__user">
-                <img src="" alt="User 1" className="review__photo" />
+                <img src={reviewer2} alt="User 1" className="review__photo" />
                 <div className="review__user-box">
                   <p className="review__user-name">Jake Freshfield</p>
                   <p className="review__user-date">Dec 24th, 2027</p>
