@@ -318,13 +318,33 @@
 }
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ REVIEWS / CONTENT
 .review {
-  &__text {
+  background-color: var(--col-white);
+  padding: 3rem;
+  font-size: inherit;
+  position: relative;
+  overflow: hidden;
+  @include box-shadow;
+  &__quotes-icon {
+    position: absolute;
+    left: -1.2rem;
+    top: -2rem;
+    width: 10rem;
+    height: 10rem;
+    z-index: 0;
+    mask-image: url('../images/svg/quotes.svg');
+    mask-size: cover;
+    background-color: var(--col-gray-0);
   }
-  &__photo {
-    width: 7rem;
-    height: 7rem;
+  &__text {
+    position: relative;
+    z-index: 1;
   }
   &__user {
+  }
+  &__photo {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
   }
   &__user-box {
   }

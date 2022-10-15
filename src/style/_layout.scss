@@ -44,22 +44,21 @@
   background-color: var(--col-gray-0);
   display: flex;
   padding: 5rem;
+  font-size: 1.4rem;
 }
 .description {
+  font-size: inherit;
   background-color: var(--col-white);
   @include box-shadow;
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 5rem;
-  font-size: 1.4rem;
 }
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ PARAGRAPH
 .paragraph {
-  // margin-bottom: 3rem;
   text-indent: 1rem;
 }
 
 .user-reviews {
-  @include box-shadow;
   flex: 1;
 }

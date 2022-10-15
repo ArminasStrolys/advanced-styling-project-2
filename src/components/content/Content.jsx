@@ -11,6 +11,7 @@ import friend3 from '../../images/friend3.jpg';
 import friend4 from '../../images/friend4.jpg';
 import reviewer1 from '../../images/reviewer1.jpg';
 import reviewer2 from '../../images/reviewer2.jpg';
+import quotes from '../../images/svg/quotes.svg';
 
 const Content = () => {
   return (
@@ -139,12 +140,11 @@ const Content = () => {
             </div>
           </div>
           <div className="user-reviews">
-            <figure className="review">
+            <figure className="review margin-bottom">
+              <div className="review__quotes-icon"></div>
               <blockquote className="review__text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Asperiores, illum sit ullam debitis, natus cupiditate fuga
-                commodi, inventore explicabo dicta esse nesciunt minus quia
-                molestiae labore laboriosam aliquid eius reiciendis.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae
+                possimus fugit consectetur cum dolor excepturi vero eius velit.
               </blockquote>
               <figcaption className="review__user">
                 <img src={reviewer1} alt="User 1" className="review__photo" />
@@ -156,13 +156,10 @@ const Content = () => {
               </figcaption>
             </figure>
             <figure className="review">
+              <div className="review__quotes-icon"></div>
               <blockquote className="review__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                nostrum asperiores libero. Culpa sint quia porro dolor est
-                voluptatem nemo, nobis repellendus fuga error dolore enim optio
-                commodi, quidem dolores officia atque! Temporibus doloremque
-                maxime iusto alias blanditiis commodi neque minima officiis
-                consequuntur?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit eos sit id! Ratione, deleniti voluptatibus.
               </blockquote>
               <figcaption className="review__user">
                 <img src={reviewer2} alt="User 1" className="review__photo" />
