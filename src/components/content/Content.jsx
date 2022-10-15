@@ -145,7 +145,7 @@ const Content = () => {
               <blockquote className="review__text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Dolorum tenetur voluptate debitis recusandae tempora fuga illo
-                id enim fugit! Tempora, quisquam quibusdam.
+                id enim fugit!
               </blockquote>
               <figcaption className="review__user">
                 <img src={reviewer1} alt="User 1" className="review__photo" />
@@ -161,8 +161,7 @@ const Content = () => {
               <blockquote className="review__text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
                 quod esse libero nihil assumenda consectetur iusto fugit
-                aspernatur asperiores accusantium, ea minima. Esse recusandae
-                praesentium autem, facere earum quis deleniti!
+                aspernatur asperiores accusantium, ea minima.
               </blockquote>
               <figcaption className="review__user">
                 <img src={reviewer2} alt="User 1" className="review__photo" />
@@ -173,6 +172,9 @@ const Content = () => {
                 <div className="review__rating">9.3</div>
               </figcaption>
             </figure>
+            <button className="btn-inline">
+              Show all <span>&rarr;</span>
+            </button>
           </div>
         </div>
       </main>

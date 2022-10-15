@@ -305,8 +305,15 @@
   display: inline-block;
   cursor: pointer;
   transition: all 0.2s;
+  & span {
+    margin-left: 0.3rem;
+    transition: all 0.2s;
+  }
   &:hover {
     color: var(--col-independence);
+    span {
+      margin-left: 1rem;
+    }
   }
   &:focus {
     outline: none;
@@ -326,7 +333,7 @@
   @include box-shadow;
   &__quotes-icon {
     position: absolute;
-    left: -1.2rem;
+    left: -1.3rem;
     top: -2rem;
     width: 10rem;
     height: 10rem;
@@ -338,6 +345,7 @@
   &__text {
     position: relative;
     z-index: 1;
+    text-indent: 1rem;
   }
   &__user {
     display: flex;
