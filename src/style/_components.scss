@@ -266,11 +266,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: 1125px) {
+    flex-direction: column;
+    .recommend__photo {
+      margin-top: 2rem;
+    }
+  }
   &__count {
     // margin-right: auto; // alternative to justify-content
   }
-  &__friends {
-  }
+  // &__friends {
+  // }
   &__photo {
     height: 4rem;
     width: 4rem;

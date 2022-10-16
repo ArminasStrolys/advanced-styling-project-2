@@ -7,6 +7,8 @@
   background-color: var(--col-cornsilk);
   // @include box-shadow;
   box-shadow: var(--box-shadow-mid);
+  @media only screen and (max-width: 1200px) {
+  }
 }
 .header {
   font-size: 1.4rem;
