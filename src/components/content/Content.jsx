@@ -176,6 +176,17 @@ const Content = () => {
               Show all <span>&rarr;</span>
             </button>
           </div>
+          {/* CTA - Call to action*/}
+        </div>
+        <div className="cta">
+          <h2 className="cta__book-now margin-bottom">
+            <span>Special offer!</span> Get 15% off bookings through whole
+            september!
+          </h2>
+          <button className="btn">
+            <span className="btn__visible">Book now</span>
+            <span className="btn__invisible">Only 17 rooms left</span>
+          </button>
         </div>
       </main>
     </>

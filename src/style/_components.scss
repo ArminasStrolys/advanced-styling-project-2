@@ -374,3 +374,17 @@
     color: var(--col-brink-pink);
   }
 }
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+  @include box-shadow;
+  &__book-now {
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    span {
+      text-decoration: underline;
+    }
+  }
+}
