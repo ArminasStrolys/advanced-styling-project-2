@@ -11,7 +11,6 @@ import friend3 from '../../images/friend3.jpg';
 import friend4 from '../../images/friend4.jpg';
 import reviewer1 from '../../images/reviewer1.jpg';
 import reviewer2 from '../../images/reviewer2.jpg';
-import quotes from '../../images/svg/quotes.svg';
 
 const Content = () => {
   return (

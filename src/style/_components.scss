@@ -374,7 +374,7 @@
     color: var(--col-brink-pink);
   }
 }
-
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ CTA- BLOCK + BUTTON / CONTENT
 .cta {
   padding: 3.5rem 0;
   text-align: center;
@@ -385,6 +385,7 @@
     text-transform: uppercase;
     span {
       text-decoration: underline;
+      font-weight: 500;
     }
   }
 }
@@ -403,18 +404,39 @@
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.2rem;
+  & > * {
+    transition: all 0.3s;
+    display: inline-block;
+  }
   &:hover &__invisible {
     top: 0%;
   }
+  &:hover &__visible {
+    top: 100%;
+  }
+  &:hover {
+    background-image: linear-gradient(
+      to left,
+      var(--col-brink-pink),
+      var(--col-brink-pink-l)
+    );
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    scale: 0.95;
+    @include box-shadow(0, 0.2rem, 1rem, 0.2);
+    transition: 0.2s;
+  }
   &__visible {
-    display: inline-block;
     padding: 2rem 7.5rem;
+    position: relative;
+    top: 0;
   }
   &__invisible {
-    display: inline-block;
     position: absolute;
-    color: black;
+    color: var(--col-white);
     top: -100%;
     left: 0;
     padding: 2rem 0rem;
