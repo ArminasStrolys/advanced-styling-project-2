@@ -22,6 +22,9 @@ $screen-L: 75em; //1200px : 16 = 75
 $size-L: calc(1200px / 16px) * 1em;
 $size-ML: calc(1100px / 16px) * 1em;
 $size-M: calc(900px / 16px) * 1em;
+$size-SM: calc(600px / 16px) * 1em;
+$size-S5: calc(500px / 16px) * 1em;
+$size-S: calc(476px / 16px) * 1em;
 // ------------------------------ FONTS
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 $open-sans: 'Open Sans';

@@ -5,6 +5,9 @@
   height: 5rem;
   width: 5rem;
   margin-left: 2rem;
+  @media only screen and (max-width: $size-S5) {
+    margin-top: 1rem;
+  }
 }
 //------------------------------------ SEARCH SVG
 .search__icon {
@@ -36,6 +39,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @media only screen and (max-width: $size-S5) {
+    order: 1;
+    flex: 0 0 100%;
+    padding: 0 2rem;
+    background-color: var(--col-gray-1);
+  }
   &__input {
     font-family: inherit;
     font-size: inherit;
@@ -48,6 +57,12 @@
     width: 30%;
     transition: all 0.3s;
     margin-left: 1rem;
+    @media only screen and (max-width: $size-M) {
+      width: 100%;
+    }
+    @media only screen and (max-width: $size-S5) {
+      border-radius: unset;
+    }
     &:focus {
       width: 100%;
       outline: none;
@@ -122,6 +137,7 @@
     display: flex;
     justify-content: space-evenly;
     margin: 0;
+    text-align: center;
   }
   &__item {
     position: relative;
@@ -139,6 +155,10 @@
     background-color: var(--col-independence);
     span {
       color: var(--col-brink-pink);
+      // @media only screen and (max-width: $size-SM) {
+      //   position: absolute;
+      //   bottom: 0;
+      // }
     }
   }
   &__item::before {
@@ -165,6 +185,18 @@
     width: 3rem;
     height: 3rem;
     margin-right: 2rem;
+    // @media only screen and (max-width: $size-SM) {
+    //   margin-right: 0;
+    //   position: absolute;
+    //   top: 0;
+
+    //   // display: flex;
+    //   // align-self: center;
+    // }
+    @media only screen and (max-width: $size-SM) {
+      // display: flex;
+      margin: 1rem 0;
+    }
   }
   &__link {
     display: flex;
@@ -179,6 +211,10 @@
       @media only screen and (max-width: $size-M) {
         justify-content: center;
         padding: 2rem;
+      }
+      @media only screen and (max-width: $size-SM) {
+        flex-direction: column;
+        padding: 0.5rem;
       }
     }
     &:hover {
@@ -217,6 +253,10 @@
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     padding: 1.5rem 3rem;
+    @media only screen and (max-width: $size-SM) {
+      font-size: 1.8rem;
+      padding: 0.5rem 1rem;
+    }
   }
   &__star-rating {
     display: flex;
@@ -246,10 +286,16 @@
     &-avg {
       font-size: 2.5rem;
       margin-bottom: -0.7rem;
+      @media only screen and (max-width: $size-SM) {
+        font-size: 1.8rem;
+      }
     }
     &-votes {
       font-size: 1.2rem;
       margin-bottom: 0.7rem;
+      @media only screen and (max-width: $size-M) {
+        font-size: 1rem;
+      }
     }
   }
 }
@@ -290,9 +336,9 @@
       margin-top: 2rem;
     }
   }
-  &__count {
-    // margin-right: auto; // alternative to justify-content
-  }
+  // &__count {
+  //   // margin-right: auto; // alternative to justify-content
+  // }
   // &__friends {
   // }
   &__photo {

@@ -25,6 +25,12 @@
   align-items: center;
   position: relative;
   z-index: 1;
+  @media only screen and (max-width: $size-S5) {
+    flex-wrap: wrap;
+    height: 12rem;
+    align-items: flex-start;
+    align-content: space-around;
+  }
 }
 .content {
   display: flex;
@@ -57,6 +63,9 @@
   @media only screen and (max-width: $size-M) {
     padding: 3rem;
   }
+  @media only screen and (max-width: $size-SM) {
+    flex-direction: column;
+  }
 }
 .description {
   font-size: inherit;
@@ -68,6 +77,10 @@
   @media only screen and (max-width: $size-M) {
     padding: 2rem;
     margin-right: 3rem;
+  }
+  @media only screen and (max-width: $size-SM) {
+    margin-right: 0;
+    margin-bottom: 3rem;
   }
 }
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ PARAGRAPH
