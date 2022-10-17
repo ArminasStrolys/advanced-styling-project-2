@@ -12,6 +12,9 @@
     max-width: 100%;
     width: 100%;
   }
+  @media only screen and (max-width: $size-M) {
+    box-shadow: unset;
+  }
 }
 .header {
   font-size: 1.4rem;
@@ -27,7 +30,7 @@
   z-index: 1;
   @media only screen and (max-width: $size-S5) {
     flex-wrap: wrap;
-    height: 12rem;
+    height: 10rem;
     align-items: flex-start;
     align-content: space-around;
   }

@@ -25,6 +25,7 @@ $size-M: calc(900px / 16px) * 1em;
 $size-SM: calc(600px / 16px) * 1em;
 $size-S5: calc(500px / 16px) * 1em;
 $size-S: calc(476px / 16px) * 1em;
+$size-XS: calc(400px / 16px) * 1em;
 // ------------------------------ FONTS
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 $open-sans: 'Open Sans';
@@ -73,6 +74,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  @media only screen and (max-width: $size-M) {
+    background-image: none;
+    background: var(--col-white);
+  }
 }
 
 // ------------------------------ UNIVERSAL CLASSES

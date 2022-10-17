@@ -185,16 +185,7 @@
     width: 3rem;
     height: 3rem;
     margin-right: 2rem;
-    // @media only screen and (max-width: $size-SM) {
-    //   margin-right: 0;
-    //   position: absolute;
-    //   top: 0;
-
-    //   // display: flex;
-    //   // align-self: center;
-    // }
     @media only screen and (max-width: $size-SM) {
-      // display: flex;
       margin: 1rem 0;
     }
   }
@@ -261,6 +252,10 @@
   &__star-rating {
     display: flex;
     margin-right: auto;
+    @media only screen and (max-width: $size-XS) {
+      margin-right: unset;
+      margin-left: -2.8rem;
+    }
     &-icon {
       width: 2rem;
       height: 2rem;
@@ -317,11 +312,18 @@
     height: 1rem;
     width: 1rem;
     margin-right: 1rem;
-    // background-image: url('../images/svg/arrow.svg');
-    // background-size: cover;
-    background-color: var(--col-brink-pink);
-    mask-image: url('../images/svg/arrow.svg');
-    mask-size: cover;
+    // for older browsers
+
+    background-image: url('../images/svg/arrow.svg');
+    background-size: cover;
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      background-color: var(--col-brink-pink);
+      mask-image: url('../images/svg/arrow.svg');
+      -webkit-mask-image: url('../images/svg/arrow.svg');
+      -webkit-mask-size: cover;
+      mask-size: cover;
+      background-image: none;
+    }
   }
 }
 .recommend {
@@ -454,6 +456,7 @@
   @include box-shadow;
   @media only screen and (max-width: $size-M) {
     padding: 2.5rem 0;
+    @include box-shadow(0, -1rem, 1rem, 0.2);
   }
   &__book-now {
     font-size: 2rem;
@@ -502,7 +505,7 @@
   }
   &:active {
     scale: 0.95;
-    @include box-shadow(0, 0.2rem, 1rem, 0.2);
+    @include box-shadow(0, 0.2rem, 1rem, 0.6);
     transition: 0.2s;
   }
   &__visible {
