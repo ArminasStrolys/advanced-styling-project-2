@@ -17,7 +17,11 @@
   --box-shadow-mid: 0 0 3rem rgba(0, 0, 0, 0.5); // not a color
 }
 $col-black: black;
-$fix: 0.6;
+$fix: 0.6; //alpha for main background gradient
+$screen-L: 75em; //1200px : 16 = 75
+$size-L: calc(1200px / 16px) * 1em;
+$size-ML: calc(1100px / 16px) * 1em;
+$size-M: calc(900px / 16px) * 1em;
 // ------------------------------ FONTS
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 $open-sans: 'Open Sans';
@@ -35,6 +39,9 @@ $open-sans: 'Open Sans';
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 1rem = 10px
+  @media only screen and (max-width: $size-ML) {
+    font-size: 50%;
+  }
 }
 body {
   font-family: $open-sans, sans-serif;

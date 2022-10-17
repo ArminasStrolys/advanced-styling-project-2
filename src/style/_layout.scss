@@ -7,7 +7,10 @@
   background-color: var(--col-cornsilk);
   // @include box-shadow;
   box-shadow: var(--box-shadow-mid);
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: $size-L) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
   }
 }
 .header {
@@ -25,6 +28,10 @@
 }
 .content {
   display: flex;
+  @media only screen and (max-width: $size-M) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .sidebar {
   background-color: var(--col-independence-darker);
