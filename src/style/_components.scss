@@ -121,14 +121,18 @@
   @media only screen and (max-width: $size-M) {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 0;
-    margin: 2rem 0;
+    margin: 0;
   }
   &__item {
     position: relative;
-
+    @media only screen and (max-width: $size-M) {
+      flex: 1;
+    }
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+      @media only screen and (max-width: $size-M) {
+        margin-bottom: 0;
+      }
     }
   }
   &__item--active {
@@ -172,6 +176,10 @@
       color: var(--col-gray-1);
       text-transform: uppercase;
       padding: 1.5rem 2rem;
+      @media only screen and (max-width: $size-M) {
+        justify-content: center;
+        padding: 2rem;
+      }
     }
     &:hover {
       color: var(--col-brink-pink);
@@ -347,6 +355,9 @@
   position: relative;
   overflow: hidden;
   @include box-shadow;
+  @media only screen and (max-width: $size-M) {
+    padding: 2rem;
+  }
   &__quotes-icon {
     position: absolute;
     left: -1.3rem;
@@ -395,6 +406,9 @@
   padding: 3.5rem 0;
   text-align: center;
   @include box-shadow;
+  @media only screen and (max-width: $size-M) {
+    padding: 2.5rem 0;
+  }
   &__book-now {
     font-size: 2rem;
     font-weight: 300;

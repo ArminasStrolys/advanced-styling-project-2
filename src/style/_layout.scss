@@ -54,6 +54,9 @@
   display: flex;
   padding: 5rem;
   font-size: 1.4rem;
+  @media only screen and (max-width: $size-M) {
+    padding: 3rem;
+  }
 }
 .description {
   font-size: inherit;
@@ -62,6 +65,10 @@
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 5rem;
+  @media only screen and (max-width: $size-M) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 }
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++ PARAGRAPH
 .paragraph {
