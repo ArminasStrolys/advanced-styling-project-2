@@ -1,5 +1,7 @@
 # Hotel tourism app created with React
 
+## This project was made mostly by using ** flexbox ** method to gain more practice in using it.
+
 Instructions about how to start this app:
 
 1. Install all packages
